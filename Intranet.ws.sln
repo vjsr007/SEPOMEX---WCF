@@ -50,6 +50,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Intranet.ws.Host", "Intrane
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "11874"
+		SlnRelativePath = "Intranet.ws\Tests\Intranet.ws.Host\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
