@@ -1,0 +1,125 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intranet.ws", "Intranet.ws", "{B1DC0178-ED2B-4A79-B466-527511EA73D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A8C900FD-10AF-484D-80C7-A8EECE469B41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{22686162-33D7-480F-8A65-882F6DD68C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.BusinessEntities", "Intranet.ws\Source\Business Logic\Intranet.ws.BusinessEntities\Intranet.ws.BusinessEntities.csproj", "{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.BusinessLogic", "Intranet.ws\Source\Business Logic\Intranet.ws.BusinessLogic\Intranet.ws.BusinessLogic.csproj", "{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource Access", "Resource Access", "{339C5FDF-5589-4CDD-98EE-53A084932567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.DataAccess", "Intranet.ws\Source\Resource Access\Intranet.ws.DataAccess\Intranet.ws.DataAccess.csproj", "{75F5C0DA-90C0-4751-BFD9-960F62812D1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Interface", "Service Interface", "{F354B364-8E2B-4FE2-9E61-111863B302BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.DataContracts", "Intranet.ws\Source\Service Interface\Intranet.ws.DataContracts\Intranet.ws.DataContracts.csproj", "{A51F0497-A196-4420-A613-EA8F00BFBDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.FaultContracts", "Intranet.ws\Source\Service Interface\Intranet.ws.FaultContracts\Intranet.ws.FaultContracts.csproj", "{5BD7BE4C-8878-4B6A-92D4-793772233DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.MessageContracts", "Intranet.ws\Source\Service Interface\Intranet.ws.MessageContracts\Intranet.ws.MessageContracts.csproj", "{5E043930-D107-44E3-99D4-9A924262EEEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.ServiceImplementation", "Intranet.ws\Source\Service Interface\Intranet.ws.ServiceImplementation\Intranet.ws.ServiceImplementation.csproj", "{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.ServiceContracts", "Intranet.ws\Source\Service Interface\Intranet.ws.ServiceContracts\Intranet.ws.ServiceContracts.csproj", "{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AA222F51-27CD-488E-AA8E-240137E3435C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Intranet.ws.Host", "Intranet.ws\Tests\Intranet.ws.Host\", "{853A4FB9-FF37-4221-B765-0FFFA81576AE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}|Intranet.ws.ServiceImplementation.ServiceImplementation.dll;{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}|Intranet.ws.BusinessEntities.BusinessEntities.dll;{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}|Intranet.ws.BusinessLogic.BusinessLogic.dll;{75F5C0DA-90C0-4751-BFD9-960F62812D1A}|Intranet.ws.DataAccess.DataAccess.dll;{A51F0497-A196-4420-A613-EA8F00BFBDDE}|Intranet.ws.DataContracts.DataContracts.dll;{5BD7BE4C-8878-4B6A-92D4-793772233DC9}|Intranet.ws.FaultContracts.FaultContracts.dll;{5E043930-D107-44E3-99D4-9A924262EEEE}|Intranet.ws.MessageContracts.MessageContracts.dll;{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}|Intranet.ws.ServiceContracts.ServiceContracts.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Intranet.ws.Host"
+		Debug.AspNetCompiler.PhysicalPath = "Intranet.ws\Tests\Intranet.ws.Host\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Intranet.ws.Host\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Intranet.ws.Host"
+		Release.AspNetCompiler.PhysicalPath = "Intranet.ws\Tests\Intranet.ws.Host\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Intranet.ws.Host\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11874"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intranet.ws.Client", "Intranet.ws\Tests\Intranet.ws.Client\Intranet.ws.Client.csproj", "{8821484D-4DA8-413B-9837-295DA00934E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB42EB61-22B8-42BA-AF13-8DC70D8F505B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F5C0DA-90C0-4751-BFD9-960F62812D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F5C0DA-90C0-4751-BFD9-960F62812D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F5C0DA-90C0-4751-BFD9-960F62812D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F5C0DA-90C0-4751-BFD9-960F62812D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51F0497-A196-4420-A613-EA8F00BFBDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51F0497-A196-4420-A613-EA8F00BFBDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51F0497-A196-4420-A613-EA8F00BFBDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51F0497-A196-4420-A613-EA8F00BFBDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD7BE4C-8878-4B6A-92D4-793772233DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD7BE4C-8878-4B6A-92D4-793772233DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD7BE4C-8878-4B6A-92D4-793772233DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD7BE4C-8878-4B6A-92D4-793772233DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E043930-D107-44E3-99D4-9A924262EEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E043930-D107-44E3-99D4-9A924262EEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E043930-D107-44E3-99D4-9A924262EEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E043930-D107-44E3-99D4-9A924262EEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8534BC8A-CF0D-437D-B633-C7D31C5D39DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853A4FB9-FF37-4221-B765-0FFFA81576AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853A4FB9-FF37-4221-B765-0FFFA81576AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853A4FB9-FF37-4221-B765-0FFFA81576AE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{853A4FB9-FF37-4221-B765-0FFFA81576AE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8821484D-4DA8-413B-9837-295DA00934E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8821484D-4DA8-413B-9837-295DA00934E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8821484D-4DA8-413B-9837-295DA00934E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8821484D-4DA8-413B-9837-295DA00934E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8C900FD-10AF-484D-80C7-A8EECE469B41} = {B1DC0178-ED2B-4A79-B466-527511EA73D4}
+		{22686162-33D7-480F-8A65-882F6DD68C37} = {A8C900FD-10AF-484D-80C7-A8EECE469B41}
+		{FB42EB61-22B8-42BA-AF13-8DC70D8F505B} = {22686162-33D7-480F-8A65-882F6DD68C37}
+		{EFDF5BBA-1B2C-43AA-8C90-338A3C7104D1} = {22686162-33D7-480F-8A65-882F6DD68C37}
+		{339C5FDF-5589-4CDD-98EE-53A084932567} = {A8C900FD-10AF-484D-80C7-A8EECE469B41}
+		{75F5C0DA-90C0-4751-BFD9-960F62812D1A} = {339C5FDF-5589-4CDD-98EE-53A084932567}
+		{F354B364-8E2B-4FE2-9E61-111863B302BA} = {A8C900FD-10AF-484D-80C7-A8EECE469B41}
+		{A51F0497-A196-4420-A613-EA8F00BFBDDE} = {F354B364-8E2B-4FE2-9E61-111863B302BA}
+		{5BD7BE4C-8878-4B6A-92D4-793772233DC9} = {F354B364-8E2B-4FE2-9E61-111863B302BA}
+		{5E043930-D107-44E3-99D4-9A924262EEEE} = {F354B364-8E2B-4FE2-9E61-111863B302BA}
+		{8534BC8A-CF0D-437D-B633-C7D31C5D39DB} = {F354B364-8E2B-4FE2-9E61-111863B302BA}
+		{4B9ED658-15B9-41EE-AF10-CA1C8B741ECB} = {F354B364-8E2B-4FE2-9E61-111863B302BA}
+		{AA222F51-27CD-488E-AA8E-240137E3435C} = {B1DC0178-ED2B-4A79-B466-527511EA73D4}
+		{853A4FB9-FF37-4221-B765-0FFFA81576AE} = {AA222F51-27CD-488E-AA8E-240137E3435C}
+		{8821484D-4DA8-413B-9837-295DA00934E0} = {AA222F51-27CD-488E-AA8E-240137E3435C}
+	EndGlobalSection
+EndGlobal

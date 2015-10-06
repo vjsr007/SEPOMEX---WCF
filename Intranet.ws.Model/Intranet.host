@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hostDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fe164a66-d0fd-467e-a8ab-ba8718af6bdc" namespace="http://Intranet.ws.Model/2015/Proxy" xmlns="http://schemas.microsoft.com/dsltools/HostDesigner">
+  <hostApplications>
+    <hostApplication Id="f1ab961a-2f0f-4209-8853-c54f178b9d36" name="HostApp" implementationProject="c:\Users\VíctorJ\documents\visual studio 2010\Projects\Intranet.ws\Intranet.ws\Tests\Intranet.ws.Host" implementationTechnology="{44e8a8c3-3651-4932-bae3-1faf3684e2f3}|WCF|WCF Extensions">
+      <serviceDescriptions>
+        <serviceReference Id="20fee86d-5713-4bcd-8293-183ec3326dad" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WcfServiceDescription&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;true&lt;/IsRequired&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="IntranetSR" serviceImplementationType="modelbus://Microsoft.Practices.ServiceFactory.ServiceContracts.ServiceContractDslAdapter/Catalogo/IntranetSR/.\Catalogo.servicecontract%2fa08b413f-5065-470d-8cbc-09d599355447">
+          <endpoints>
+            <endpoint Id="4fdf4bcd-b766-406b-8889-b4824480ff87" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WcfEndpoint&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;basicHttpBinding&lt;/IsRequired&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Endpoint1" />
+          </endpoints>
+        </serviceReference>
+      </serviceDescriptions>
+    </hostApplication>
+  </hostApplications>
+  <clientApplications>
+    <clientApplication Id="281bfebf-0a1e-4a1e-87be-3c889563c03a" name="ClienteApp" implementationTechnology="{44e8a8c3-3651-4932-bae3-1faf3684e2f3}|WCF|WCF Extensions" implementationProject="Intranet.ws\Tests\Intranet.ws.Client\Intranet.ws.Client.csproj">
+      <proxies>
+        <proxy Id="9edac21a-95ff-43ff-8e29-9dc7e2378282" name="Proxy1">
+          <endpoint>
+            <endpointMoniker Id="4fdf4bcd-b766-406b-8889-b4824480ff87" />
+          </endpoint>
+        </proxy>
+      </proxies>
+    </clientApplication>
+  </clientApplications>
+</hostDesignerModel>

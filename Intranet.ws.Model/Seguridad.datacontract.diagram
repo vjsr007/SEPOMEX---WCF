@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Seguridad">
+  <dataContractModelMoniker Id="e8231c21-502a-4426-9ad6-b6ba20ae1316" />
+  <nestedChildShapes>
+    <dataContractCompartmentShape Id="a42f1866-d324-4bbe-a4b8-b6a95a8a5d6d" absoluteBounds="0.5, 1.125, 2, 1.9131982421875002" outlineDashStyle="Solid" outlineThickness="0.0125">
+      <dataContractMoniker Id="659af296-2fe6-4d93-a6c1-14617a1cb445" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1dbf2ac0-a962-4a26-899b-39b6bc42bfba" absoluteBounds="0.51499999999999968, 1.5350000000000001, 1.9700000000000002, 1.4031982421875" name="DataMembersCompartment" titleTextColor="Black" itemTextColor="DarkGoldenrod" />
+      </nestedChildShapes>
+    </dataContractCompartmentShape>
+    <dataContractCollectionShape Id="1e66fcfd-adc0-49a6-abf2-4c378276d05f" absoluteBounds="0.5, 0.5, 2, 0.375">
+      <dataContractCollectionMoniker Id="a194fe37-9766-4fa4-ad69-63b01d7eb885" />
+    </dataContractCollectionShape>
+    <referenceConnector edgePoints="[(1.5 : 1.125); (1.5 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="43328c47-57c3-4017-9c01-66b6a2b45c42">
+      <nodes>
+        <dataContractCompartmentShapeMoniker Id="a42f1866-d324-4bbe-a4b8-b6a95a8a5d6d" />
+        <dataContractCollectionShapeMoniker Id="1e66fcfd-adc0-49a6-abf2-4c378276d05f" />
+      </nodes>
+    </referenceConnector>
+  </nestedChildShapes>
+</dataContractDiagram>

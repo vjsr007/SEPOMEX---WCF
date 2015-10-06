@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1bd5706d-f5f8-4de6-ba3e-ed7bca3a20f4" implementationTechnology="{b327a38e-00f0-4967-838b-8e8fcc93db30}|WCF|WCF Extension" projectMappingTable="Intranet.ws" namespace="http://Intranet.ws.Model/2015/Error" xmlns="http://schemas.microsoft.com/dsltools/DataContractDsl">
+  <contracts>
+    <faultContract Id="ca186569-499a-4420-8e9b-d3a1351286bd" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFFaultContract&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Error" namespace="http://Intranet.ws.Model/2015/Error">
+      <dataMembers>
+        <primitiveDataType Id="1d7ad1d3-11a9-44af-92d1-9316f8a98252" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataElement&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;false&lt;/IsRequired&gt;&#xD;&#xA;    &lt;Order&gt;0&lt;/Order&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Mensaje" collectionType="" isNullable="true" />
+      </dataMembers>
+    </faultContract>
+  </contracts>
+</dataContractModel>

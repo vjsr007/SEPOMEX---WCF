@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Catalogo">
+  <dataContractModelMoniker Id="904a88bc-f3d9-40e3-819e-9df0e944e9f3" />
+  <nestedChildShapes>
+    <dataContractCompartmentShape Id="178d6f94-9cc0-4bb2-94a3-ef2bfd27a02b" absoluteBounds="0.5, 0.5, 2, 0.95169108072916675" outlineDashStyle="Solid" outlineThickness="0.0125">
+      <dataContractMoniker Id="005cd66c-3592-4e21-85cd-690e829f864b" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2a96c16-ccb1-4c9e-bb7d-36ffdddfaf04" absoluteBounds="0.51499999999999968, 0.91000000000000014, 1.9700000000000002, 0.44169108072916663" name="DataMembersCompartment" titleTextColor="Black" itemTextColor="DarkGoldenrod" />
+      </nestedChildShapes>
+    </dataContractCompartmentShape>
+  </nestedChildShapes>
+</dataContractDiagram>

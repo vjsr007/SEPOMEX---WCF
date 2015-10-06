@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Intranet" Class="IntranetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=Intranet;Integrated Security=True" SettingsObjectName="Intranet.ws.DataAccess.Properties.Settings" SettingsPropertyName="IntranetConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spCountingEntities" Method="spCountingEntities">
+    <ElementType Name="spCountingEntitiesResult">
+      <Column Name="NoPaises" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoEstados" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoMunicipios" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoCiudades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoCP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spObtenerUsuario" Method="spObtenerUsuario">
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="pass" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="spObtenerUsuarioResult">
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RolID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rol" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spObtenerUsuarioFunciones" Method="spObtenerUsuarioFunciones">
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spObtenerUsuarioFuncionesResult">
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RolID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rol" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FuncionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Funcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FuncionPadreID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FuncionPadre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FuncionDescripcion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="sepomex.spAgregarCiudades" Method="spAgregarCiudades">
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spAgregarCodigosPostales" Method="spAgregarCodigosPostales">
+    <Parameter Name="CodigoPostal" Parameter="codigoPostal" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="TipoAsentamiento" Parameter="tipoAsentamiento" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Asentamiento" Parameter="asentamiento" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Zona" Parameter="zona" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CiudadId" Parameter="ciudadId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spAgregarEstados" Method="spAgregarEstados">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spAgregarMunicipios" Method="spAgregarMunicipios">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spAgregarPais" Method="spAgregarPais">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="Moneda" Parameter="moneda" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="CodMoneda" Parameter="codMoneda" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spEditarCiudades" Method="spEditarCiudades">
+    <Parameter Name="CiudadID" Parameter="ciudadID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spEditarCodigosPostales" Method="spEditarCodigosPostales">
+    <Parameter Name="CodigoPostalID" Parameter="codigoPostalID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodigoPostal" Parameter="codigoPostal" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="TipoAsentamiento" Parameter="tipoAsentamiento" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Asentamiento" Parameter="asentamiento" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Zona" Parameter="zona" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CiudadId" Parameter="ciudadId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spEditarEstados" Method="spEditarEstados">
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spEditarMunicipios" Method="spEditarMunicipios">
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spEditarPais" Method="spEditarPais">
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="Moneda" Parameter="moneda" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="CodMoneda" Parameter="codMoneda" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="sepomex.spObtenerMunicipios" Method="spObtenerMunicipios">
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spObtenerMunicipiosResult">
+      <Column Name="MunicipioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="EstadoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaUltimaModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PaisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="sepomex.spObtenerCiudades" Method="spObtenerCiudades">
+    <Parameter Name="CiudadID" Parameter="ciudadID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spObtenerCiudadesResult">
+      <Column Name="CiudadID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="EstadoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MunicipioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaUltimaModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Municipio" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PaisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="sepomex.spObtenerEstados" Method="spObtenerEstados">
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="spObtenerEstadosResult">
+      <Column Name="EstadoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PaisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaUltimaModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="sepomex.spObtenerCodigosPostales" Method="spObtenerCodigosPostales">
+    <Parameter Name="CodigoPostal" Parameter="codigoPostal" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="TipoAsentamiento" Parameter="tipoAsentamiento" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Asentamiento" Parameter="asentamiento" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Zona" Parameter="zona" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="MunicipioID" Parameter="municipioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CiudadId" Parameter="ciudadId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EstadoID" Parameter="estadoID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spObtenerCodigosPostalesResult">
+      <Column Name="CodigoPostalID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MunicipioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CiudadID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Asentamiento" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TipoAsentamiento" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Zona" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FechaUltimaModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Municipio" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Ciudad" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="EstadoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PaisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="sepomex.spObtenerPaises" Method="spObtenerPaises">
+    <Parameter Name="Activo" Parameter="activo" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="PaisID" Parameter="paisID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spObtenerPaisesResult">
+      <Column Name="PaisID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Moneda" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="CodMoneda" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaUltimaModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

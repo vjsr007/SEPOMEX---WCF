@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Intranet.ws">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="fb42eb61-22b8-42ba-af13-8dc70d8f505b" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="efdf5bba-1b2c-43aa-8c90-338a3c7104d1" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="75f5c0da-90c0-4751-bfd9-960f62812d1a" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="a51f0497-a196-4420-a613-ea8f00bfbdde" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="5bd7be4c-8878-4b6a-92d4-793772233dc9" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="5e043930-d107-44e3-99d4-9a924262eeee" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="8534bc8a-cf0d-437d-b633-c7d31c5d39db" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="4b9ed658-15b9-41ee-af10-ca1c8b741ecb" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="853a4fb9-ff37-4221-b765-0fffa81576ae" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="8821484d-4da8-413b-9837-295da00934e0" ProjectPath="\GeneratedCode" ProjectName="Intranet.ws.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

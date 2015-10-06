@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Error">
+  <dataContractModelMoniker Id="1bd5706d-f5f8-4de6-ba3e-ed7bca3a20f4" />
+  <nestedChildShapes>
+    <faultContractCompartmentShape Id="04c5fa92-0f7d-4031-b132-659c8e89bbb9" absoluteBounds="0.5, 0.5, 2, 0.95169108072916675">
+      <faultContractMoniker Id="ca186569-499a-4420-8e9b-d3a1351286bd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b8aae9e-493f-4695-81a0-3a604d89df59" absoluteBounds="0.51499999999999968, 0.91000000000000014, 1.9700000000000002, 0.44169108072916663" name="FaultMembersCompartment" titleTextColor="Black" itemTextColor="IndianRed" />
+      </nestedChildShapes>
+    </faultContractCompartmentShape>
+  </nestedChildShapes>
+</dataContractDiagram>

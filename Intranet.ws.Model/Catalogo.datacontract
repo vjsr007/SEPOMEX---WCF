@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="904a88bc-f3d9-40e3-819e-9df0e944e9f3" implementationTechnology="{b327a38e-00f0-4967-838b-8e8fcc93db30}|WCF|WCF Extension" projectMappingTable="Intranet.ws" namespace="http://Intranet.ws.Model/2015/Catalogo" xmlns="http://schemas.microsoft.com/dsltools/DataContractDsl">
+  <contracts>
+    <dataContract Id="005cd66c-3592-4e21-85cd-690e829f864b" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataContract&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Pais" namespace="http://Intranet.ws.Model/2015/Catalogo">
+      <dataMembers>
+        <primitiveDataType Id="ca4fab7b-607a-4f03-987c-e5a398e0f189" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataElement&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;false&lt;/IsRequired&gt;&#xD;&#xA;    &lt;Order&gt;0&lt;/Order&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="PaisID" collectionType="" isNullable="true" />
+      </dataMembers>
+    </dataContract>
+  </contracts>
+</dataContractModel>
